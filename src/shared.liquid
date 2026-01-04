@@ -1,0 +1,13 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.30.0/dist/tabler-icons.min.css" />
+{% assign year = trmnl.plugin_settings.custom_fields_values.year %}
+{% assign showIcon = trmnl.plugin_settings.custom_fields_values.Icon%}
+{% if trmnl.plugin_settings.custom_fields_values.firstDay == 'sunday'%}
+{% assign current_week = 'now' | date: '%U' | plus: 1 %}
+{% else %}
+{% assign current_week = 'now' | date: '%W' | plus: 1 %}
+{% endif %}
+{% assign weeks = year | append: '-12-31' | date: '%U' | plus: 1 %}
+
+<script type="text/javascript">
+  document.querySelector('.layout').dataset.timestamp = Date.now();
+</script>

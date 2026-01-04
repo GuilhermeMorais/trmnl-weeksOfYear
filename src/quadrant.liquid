@@ -1,0 +1,39 @@
+{% assign weeks_per_row = 11 %}
+
+
+<style>
+  .year {
+    grid-template-columns: repeat({{ weeks_per_row }}, 1fr);
+  }
+
+  .week {
+    aspect-ratio: 1;
+  }
+</style>
+
+<div class="layout layout--col">
+  {% assign percentage = current_week | times: 100.0 | divided_by: weeks | round: 1 %}
+  <div class="title">
+    Week {{ current_week }}{% if percentage == 25.0 or percentage == 50.0 or percentage == 75.0 or percentage >= 80.0 %} - {{ percentage }}%{% endif %}
+  </div>
+  {% if showIcon == "yes" %}
+  <div class="grid year grid-wrap screen screen--scale-xsmall pl--5 pr--5 gap--[5px]">
+    {% for week in (1..52) %}
+    <div class="week flex col row">
+      <i class="ti value value--small ti-square{% if week <= current_week %}-check-filled{% endif %}"></i>
+    </div>      
+    {% endfor %}
+  </div>
+  {% else %}
+  <div class="grid year pl--5 pr--5 grid-wrap gap--[5px] ">
+    {% for week in (1..52) %}
+    <div class="week bg--{% if week <= current_week %}black{% else %}gray-50{% endif %}"></div>
+    {% endfor %}
+  </div>
+  {% endif %}
+</div>
+
+<div class="title_bar">
+  <i class="ti ti-license"></i>
+  <span class="title">Weeks of {{ year }}</span>
+</div>

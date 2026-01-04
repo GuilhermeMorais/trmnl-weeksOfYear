@@ -1,0 +1,41 @@
+---
+strategy: static
+no_screen_padding: 'no'
+dark_mode: 'no'
+static_data: ''
+polling_verb: get
+polling_url: ''
+polling_headers: ''
+polling_body: ''
+id: 209377
+custom_fields:
+- keyname: year
+  field_type: number
+  placeholder: '2025'
+  name: Year
+  description: Which year that we will show the weeks
+- keyname: firstDay
+  field_type: select
+  name: Start week on?
+  description: The week should start on a Sunday or Monday?
+  options:
+  - Sunday
+  - Monday
+  detaul: Sunday
+- keyname: Icon
+  field_type: select
+  name: Use Icon instead?
+  description: Will show a square and a cross-squase instead of boxes
+  options:
+  - 'Yes'
+  - 'No'
+  default: 'no'
+- keyname: author_bio
+  name: About This Plugin
+  field_type: author_bio
+  category: calendar,kpi
+  description: A visual representation of the amount of weeks for the year! Created by Guilherme based on Jasper's recipe <a href="https://usetrmnl.com/recipes/22415">Your Life in Weeks</a>. You can find me on <a href="https://dotnet.social/@Gui">Mastodon</a>, or @glmsharp on Discord or send an email.
+  github_url: https://github.com/GuilhermeMorais
+  email_address: gui.lopes@gmail.com
+name: Weeks of the Year
+refresh_interval: 1440
