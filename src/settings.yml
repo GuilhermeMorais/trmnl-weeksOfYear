@@ -19,9 +19,9 @@ custom_fields:
   name: Start week on?
   description: The week should start on a Sunday or Monday?
   options:
-  - Sunday
-  - Monday
-  detaul: Sunday
+  - 'Sunday'
+  - 'Monday'
+  detaul: 'Sunday'
 - keyname: Icon
   field_type: select
   name: Use Icon instead?
@@ -33,9 +33,9 @@ custom_fields:
 - keyname: author_bio
   name: About This Plugin
   field_type: author_bio
-  category: calendar,kpi
-  description: A visual representation of the amount of weeks for the year! Created by Guilherme based on Jasper's recipe <a href="https://usetrmnl.com/recipes/22415">Your Life in Weeks</a>. You can find me on <a href="https://dotnet.social/@Gui">Mastodon</a>, or @glmsharp on Discord or send an email.
-  github_url: https://github.com/GuilhermeMorais
+  category: productivity,personal
+  description: Visualize your year at a glance. This plugin displays the current week number and all weeks of the year as checkboxes, marking each week as it passes to help you stay aware of time and progress through the year. Created by Guilherme based on Jasper's recipe <a href="https://usetrmnl.com/recipes/22415">Your Life in Weeks</a>. You can find me on <a href="https://dotnet.social/@Gui">Mastodon</a>, or @glmsharp on Discord or send an email. Version 1.1 (2025-01-10)
+  github_url: https://github.com/GuilhermeMorais/trmnl-weeksOfYear
   email_address: gui.lopes@gmail.com
 name: Weeks of the Year
 refresh_interval: 1440
