@@ -2,7 +2,7 @@
 strategy: static
 no_screen_padding: 'no'
 dark_mode: 'no'
-static_data: ''
+static_data: '{}'
 polling_verb: get
 polling_url: ''
 polling_headers: ''
@@ -33,7 +33,7 @@ custom_fields:
 - keyname: author_bio
   name: About This Plugin
   field_type: author_bio
-  category: productivity,personal
+  category: "productivity,personal"
   description: Visualize your year at a glance. This plugin displays the current week number and all weeks of the year as checkboxes, marking each week as it passes to help you stay aware of time and progress through the year. Created by Guilherme based on Jasper's recipe <a href="https://usetrmnl.com/recipes/22415">Your Life in Weeks</a>. You can find me on <a href="https://dotnet.social/@Gui">Mastodon</a>, or @glmsharp on Discord or send an email. Version 1.1 (2025-01-10)
   github_url: https://github.com/GuilhermeMorais/trmnl-weeksOfYear
   email_address: gui.lopes@gmail.com

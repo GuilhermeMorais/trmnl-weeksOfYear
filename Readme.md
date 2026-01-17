@@ -30,6 +30,16 @@ Or you can copy the files from the `src` folder zip it and add it manually.
 - Display an icon or a box for each week.
 - The start day of the week can be configured (Sunday or Monday).
 
+## Local Development
+
+First, start the docker development server:
+
+```bash
+docker-compose up -d
+```
+
+Then, you can edit the files in the `src` folder and see the changes reflected in your browser: http://localhost:8001
+
 ## License
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
