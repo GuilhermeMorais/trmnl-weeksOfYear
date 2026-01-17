@@ -17,7 +17,7 @@
   </div>
   <div class="grid year-weeks row grid-wrap p--7 gap--xsmall">
     {% for week in (1..52) %}
-    {% if showIcon  == "yes" %}
+    {% if showIcon %}
     <div class="week flex flex--row value">
       <i class="ti ti-square{% if week <= current_week %}-check-filled{% endif %}"></i>
     </div>
