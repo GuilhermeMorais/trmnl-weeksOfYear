@@ -27,6 +27,7 @@ custom_fields:
   name: Use Icon instead?
   description: Will show a square and a cross-square instead of boxes
   default: false
+  optional: true
 - keyname: author_bio
   name: About This Plugin
   field_type: author_bio
