@@ -21,11 +21,11 @@ custom_fields:
   options:
   - 'Sunday'
   - 'Monday'
-  detaul: 'Sunday'
+  default: 'Sunday'
 - keyname: Icon
   field_type: boolean
   name: Use Icon instead?
-  description: Will show a square and a cross-squase instead of boxes
+  description: Will show a square and a cross-square instead of boxes
   default: false
 - keyname: author_bio
   name: About This Plugin
