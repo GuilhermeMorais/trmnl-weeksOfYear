@@ -14,7 +14,7 @@
   <div class="title">
     Week {{ current_week }}{% if percentage == 25.0 or percentage == 50.0 or percentage == 75.0 or percentage >= 80.0 %} - {{ percentage }}%{% endif %}
   </div>
-    {% if showIcon == "yes" %}
+    {% if showIcon %}
         <div class="grid year grid-warp  pl--10 pr--10 pt--3 pb--2">
           {% for week in (1..52) %}
           <div class="week flex flex--row row col">

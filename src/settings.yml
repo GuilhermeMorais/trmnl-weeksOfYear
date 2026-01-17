@@ -23,13 +23,10 @@ custom_fields:
   - 'Monday'
   detaul: 'Sunday'
 - keyname: Icon
-  field_type: select
+  field_type: boolean
   name: Use Icon instead?
   description: Will show a square and a cross-squase instead of boxes
-  options:
-  - 'Yes'
-  - 'No'
-  default: 'no'
+  default: false
 - keyname: author_bio
   name: About This Plugin
   field_type: author_bio
